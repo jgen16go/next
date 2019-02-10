@@ -1,8 +1,5 @@
 {
   "watch": ["server"],
   "ext": "ts,tsx",
-  "exec": "ts-node server/index.tsx",
-  "execMap": {
-    "tsx": "ts-node --compiler-options '{\"module\":\"commonjs\"}'"
-  }
+  "exec": "ts-node server/index.tsx"
 }
