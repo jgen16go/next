@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "tsnd --respawn server.ts"
+    "dev": "tsnd --respawn src/server/index.ts & yarn run prettier-watch",
+    "prettier-watch": "onchange 'src/**/*' -- prettier --write 'src/**/*' --loglevel silent"
   },
   "repository": {
     "type": "git",
@@ -17,15 +18,15 @@
   },
   "homepage": "https://github.com/jgen16go/next#readme",
   "dependencies": {
-    "@types/react": "^16.7.20",
-    "@types/react-dom": "^16.0.11",
+    "@types/react": "^16.8.2",
+    "@types/react-dom": "^16.8.0",
     "@types/react-redux": "^7.0.1",
     "@types/redux": "^3.6.0",
     "@zeit/next-typescript": "^1.1.1",
     "express": "^4.16.4",
     "next": "^7.0.2",
-    "react": "^16.7.0",
-    "react-dom": "^16.7.0",
+    "react": "^16.8.1",
+    "react-dom": "^16.8.1",
     "react-redux": "^6.0.0",
     "redux": "^4.0.1",
     "typescript": "^3.3.3"
@@ -33,7 +34,13 @@
   "devDependencies": {
     "@types/express": "^4.16.1",
     "nodemon": "^1.18.10",
+    "onchange": "^5.2.0",
+    "prettier": "^1.16.4",
     "redux-devtools-extension": "^2.13.7",
-    "ts-node-dev": "^1.0.0-pre.32"
+    "ts-node-dev": "^1.0.0-pre.32",
+    "tslint": "^5.12.1",
+    "tslint-config-prettier": "^1.18.0",
+    "tslint-config-standard": "^8.0.1",
+    "tslint-plugin-prettier": "^2.0.1"
   }
 }

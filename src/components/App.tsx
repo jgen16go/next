@@ -1,6 +1,6 @@
 import * as React from 'react'
 
-const Component = ( props: any ) => {
+const Component = (props: any) => {
   console.log(props)
   return (
     <React.Fragment>
