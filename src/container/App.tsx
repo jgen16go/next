@@ -5,7 +5,7 @@ import { RootState } from '../modules'
 import { increment, decrement } from '../modules/counter'
 
 const mapStateToProps = (state: RootState) => ({
-  counter: state.counter
+  counter: state.counter,
 })
 
 const mapDispatchToProps = (dispatch: Dispatch) => ({
@@ -14,7 +14,7 @@ const mapDispatchToProps = (dispatch: Dispatch) => ({
   },
   decrement: () => {
     dispatch(decrement())
-  }
+  },
 })
 
 export const App = connect(

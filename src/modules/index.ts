@@ -6,5 +6,5 @@ export interface RootState {
 }
 
 export default combineReducers<RootState>({
-  counter: CounterReducer
+  counter: CounterReducer,
 })
