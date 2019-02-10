@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "tsnd --respawn src/server/index.ts & yarn run prettier-watch",
-    "prettier-watch": "onchange 'src/**/*' -- prettier --write 'src/**/*' --loglevel silent"
+    "dev": "nodemon & yarn run prettier-watch",
+    "prettier-watch": "onchange 'src/**/*' 'pages/**/*' 'server/**/*' -- prettier --write 'src/**/*' 'pages/**/*' 'server/**/*' --loglevel silent"
   },
   "repository": {
     "type": "git",
